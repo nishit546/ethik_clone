@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+.navbar {
+    height: 16vh;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.marq {
+    background-color: #444;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.marq marquee {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.marq p {
+    display: inline-block;
+    margin: 0 100px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+.logo {
+    width: 15vh;
+    padding: 10px 0;
+}
+
+.site-logo {
+    padding: 0 15px 0 0;
+    margin: 5vh;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 4vh;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 40vw;
+    flex-wrap: wrap;
+    margin-left: 15vh;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.95;
+}
+
+.right-menu {
+    display: flex;
+    gap: 3vh;
+    padding: 10px;
+    margin: 6vh;
+    margin-left: 14vh;
+}
+
+.right-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    padding-top: 18vh; 
+}
+
+
+.login-container {
+    width: 600px;                
+    background: #fff;
+    border-radius: 12px;
+    padding: 60px;               
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.login-container:hover {
+    transform: scale(1.02);
+}
+
+.login-container h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 1rem;
+}
+
+label span {
+    color: red;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #000;
+}
+
+.forgot {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #000;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .login-container h1 {
+        font-size: 2rem;
+    }
+
+    input {
+        padding: 14px;
+    }
+
+    .btn {
+        padding: 13px;
+    }
+}
+
+.footer {
+    background-color: #0a0a0a;
+    color: #ccc;
+    padding: 6vh 5vw 2vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.footer-about h3,
+.footer-col h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+.footer-about p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4vw;
+    margin-top: 2vh;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-col.contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-col.contact i {
+    color: #fff;
+}
+
+.social-links {
+    text-align: center;
+    margin: 4vh 0 3vh;
+}
+
+.social-links a {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 1.5vh;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3vh;
+    }
+
+    .footer-about p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.marq {
+    background-color: #444;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.marq marquee {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.marq p {
+    display: inline-block;
+    margin: 0 100px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.navbar {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 4vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 0 6vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    width: 13vh;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    opacity: 0.95;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+}
+
+.right-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+
+main {
+    padding-top: 18vh;
+}
+
+.big-image {
+    width: 100%;
+    height: 70vh;
+    background-image: url("//ethikonline.com/cdn/shop/collections/web_banner_style_01-01_1_3000x.progressive.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home {
+    margin: 5vh auto;
+    padding: 0 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.grey {
+    color: grey;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.fa-heart:hover,
+.fa-solid {
+    cursor: pointer;
+}
+
+.one {
+    margin-bottom: 10vh;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    background-image: url(https://ethikonline.com/cdn/shop/files/MonarchBrown_Ethik_Side_392x.jpg?v=1755694647);
+    transition: all 0.4s ease-in-out;
+}
+
+.shop {
+    margin-top: 350px;
+    background-color: black;
+    justify-content: center;
+    color: white;
+    transition: all .9s ease-in;
+    display: none;
+    animation: upp 0.4s ease-in-out;
+}
+
+@keyframes upp {
+    0% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+
+}
+
+.hero {
+    margin-top: 9vh;
+}
+
+.images {
+    display: flex;
+    margin-left: 2vh;
+    gap: 5vh;
+}
+
+.quick {
+    padding-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one:hover {
+    margin-bottom: 10vh;
+    border: 2px solid;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    background-image: url(https://ethikonline.com/cdn/shop/files/l3eyi7zruwupgz2rekjs_392x.webp?v=1758092673);
+    cursor: pointer;
+}
+
+.one {
+    margin-bottom: 10vh;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    background-image: url(https://ethikonline.com/cdn/shop/files/ebvfpjyx2komcnvnpekc_392x.webp?v=1758092673);
+    transition: all 0.4s ease-in-out;
+}
+
+.one:hover .shop {
+    display: flex;
+    height: 50px;
+}
+
+.two {
+    margin-bottom: 10vh;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    transition: all 0.4s ease-in-out;
+    background: url(//ethikonline.com/cdn/shop/files/BridgeBlack_2_392x.webp?v=1755864098);
+}
+
+.two:hover {
+    margin-bottom: 10vh;
+    border: 2px solid;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    background: url(https://ethikonline.com/cdn/shop/files/BridgeBlack_5_392x.webp?v=1755864098);
+}
+
+.two:hover .shop {
+    display: flex;
+    height: 50px;
+}
+
+.three {
+    margin-bottom: 10vh;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    transition: all 0.4s ease-in-out;
+    background: url(//ethikonline.com/cdn/shop/files/OFFCODE-COCO-2_392x.webp?v=1759139460);
+}
+
+.three:hover {
+
+    margin-bottom: 10vh;
+    border: 2px solid;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    background: url(https://ethikonline.com/cdn/shop/files/OFFCODE-COCO-1_392x.webp?v=1759139460);
+}
+
+.three:hover .shop{
+    display: flex;
+    height: 50px;
+}
+.name {
+    display: flex;
+    /* margin-left:18vh; */
+}
+
+.name a {
+    text-decoration: none;
+    color: black;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 2vh;
+}
+
+.price {
+    margin-right: 14vh;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.footer {
+    background-color: #0a0a0a;
+    color: #ccc;
+    padding: 6vh 5vw 2vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.footer-about h3,
+.footer-col h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+.footer-about p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4vw;
+    margin-top: 2vh;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-col.contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-col.contact i {
+    color: #fff;
+}
+
+.social-links {
+    text-align: center;
+    margin: 4vh 0 3vh;
+}
+
+.social-links a {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 1.5vh;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3vh;
+    }
+
+    .footer-about p {
+        font-size: 0.9rem;
+    }
+}
